@@ -1,0 +1,3 @@
+Get-ADUser -filter * -Properties * -SearchBase 'OU=OUdesejada,OU
+=DC=domain,DC=com,DC=br' | Select-Object -Property Name,description,
+LastLogonDate | ft >> c:\Users_OU.txt
